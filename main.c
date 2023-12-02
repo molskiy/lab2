@@ -44,36 +44,36 @@ int main(){
 						flag = 0;
 						break;
 					}
-					else{
+					else
 						printf("Загружено %d записей\n\n", quantity);
-					}
 				}
 				break;
 			}
 			case 2:
-				if(perfumes==NULL){
-						int key3;
-						printf("База данных не найдена. Создать новую?\n");
-						printf("1-Да\n");
-						printf("2-Нет\n");
-						scanf("%i", &key3);
-						if(key3==1) 
-						    tempKey=1;
-						else 
-						    flag = 0;
-						break;
-					}
-					else{
-						for(int i = 0; i<quantity; i++){
-					    printf("Название: %s;\n", perfumes[i].name);
-						printf("Цена: %f;\n", perfumes[i].price);
-						printf("Цвет: %s;\n", perfumes[i].colour);
-						printf("\n");
-					}
-				
-				break;
-			case 3:
-				if(perfumes==NULL) 
+    				if(perfumes==NULL){
+    					int key3;
+    					printf("База данных не найдена. Создать новую?\n");
+    					printf("1-Да\n");
+    					printf("2-Нет\n");
+    					scanf("%i", &key3);
+    					if(key3==1) 
+    					    tempKey=1;
+    					else 
+    					    flag = 0;
+    					break;
+    				}
+    				else{
+    					for(int i = 0; i<quantity; i++){
+    				        printf("Название: %s;\n", perfumes[i].name);
+    					    printf("Цена: %f;\n", perfumes[i].price);
+    					    printf("Цвет: %s;\n", perfumes[i].colour);
+    				    	printf("\n");
+    					}
+    				}
+    			
+    			break;
+    		case 3:
+			if(perfumes==NULL) 
 					{
 						int key3;
 						printf("База данных не найдена. Создать новую?\n");
@@ -93,7 +93,7 @@ int main(){
 				break;
 			default:
 				flag = 0;
-				break;
+	            break;
 		}
 	}
 	if (perfumes) 
