@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "func.h"
-
 int main(){
 	perfume *perfumes = NULL;
 	int quantity=0;
